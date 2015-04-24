@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>AwesomeConf Registration</title>
+
+    <!-- Bootstrap CSS and theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="registration.css">
+  </head>
+
+  <body>
+    <div class="container">
+
+      <h1>AwesomeConf Registration</h1>
+
+      <form>
+        <div class="form-group name">
+          <label for="name" class="control-label">Name</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+
+        <div class="form-group email">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+
+        <div class="form-group">
+          <label>Are you presenting?</label>
+          <div class="radio">
+            <label>
+              <input type="radio" name="presenting" value="false" checked data-valid="true">
+              No
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="presenting" value="true" data-valid="true">
+              Yes
+            </label>
+          </div>
+        </div>
+
+        <div class="payment">
+          <div class="form-group credit-card">
+            <label for="credit-card">Credit Card</label>
+            <input type="text" inputmode="numeric" class="form-control" id="credit-card">
+          </div> 
+
+          <div class="form-group credit-code">
+            <label for="credit-code">Security Code / CVV / CVC</label>
+            <input type="text" inputmode="numeric" class="form-control" id="credit-code">
+          </div> 
+        </div>
+
+        <button type="button" class="btn btn-primary submit">Submit Registration!</button>
+
+      </form>
+
+    </div>
+  </body>
+  <script src="registration-bundle.js"></script>
+</html>

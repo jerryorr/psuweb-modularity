@@ -1,0 +1,17 @@
+{
+  "name": "awesomeconf",
+  "version": "1.0.0",
+  "main": "registration.js",
+  "scripts": {
+    "build": "browserify -d registration.js -o registration-bundle.js",
+    "build-watch": "watchify -d registration.js -o registration-bundle.js"
+  },
+  "author": "Jerry Orr <orr94@yahoo.com>",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^10.1.0",
+    "jquery": "^2.1.4",
+    "lodash": "^3.8.0",
+    "watchify": "^3.2.1"
+  }
+}

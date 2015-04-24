@@ -1,0 +1,19 @@
+{
+  "name": "es6-modules",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "browserify debate.js -o bundle.js",
+    "watch": "watchify --debug debate.js -o bundle.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.4",
+    "jquery": "^2.1.4",
+    "sprintf": "^0.1.5",
+    "watchify": "^3.2.2"
+  },
+  "browserify": {
+    "transform": ["babelify"]
+  }
+}

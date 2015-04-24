@@ -1,0 +1,15 @@
+{
+  "name": "browserify-modules",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "browserify debate.js -o bundle.js",
+    "build-watch": "watchify --debug debate.js -o bundle.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^10.2.0",
+    "jquery": "^2.1.4",
+    "sprintf": "^0.1.5",
+    "watchify": "^3.2.1"
+  }
+}
